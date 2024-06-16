@@ -1,11 +1,6 @@
 
 function power(base, exponent) {
-    if (exponent === 0)
-        return 1;
-    if (exponent === 1)
-        return base;
-
-    const isExponentNegative = exponent < 0;
+    const isExponentNegative = exponent <= -1;
     const modularExponent = Math.abs(exponent);
 
     const power = Array(modularExponent)
